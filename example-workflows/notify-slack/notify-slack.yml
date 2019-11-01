@@ -15,15 +15,6 @@ steps:
 - name: slack-notify
   image: projectnebula/slack-notification:bf8ecb9
   spec:
-    apitoken:
-       $type: Secret
-       name: slack-token
-    apiname:
-       $type: Parameter
-       name: test
-    channel:
-       $type: Parameter
-       name: channel
     message:
        $type: Parameter
        name: message
