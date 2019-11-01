@@ -19,7 +19,7 @@ steps:
        $type: Secret
        name: slack-token
     apiname:
-       $type: Secret
+       $type: Parameter
        name: test
     channel:
        $type: Parameter
